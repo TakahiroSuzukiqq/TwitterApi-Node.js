@@ -1,5 +1,5 @@
 {
-  "name": "twitter",
+  "name": "tw",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,5 +12,8 @@
     "follower"
   ],
   "author": "taka",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.0"
+  }
 }
