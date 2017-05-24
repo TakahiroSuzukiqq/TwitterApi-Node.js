@@ -1,11 +1,25 @@
 var Twitter = require('twitter');
 
 var client = new Twitter({
-  consumer_key: 'r2Met6JATLds9rmT1AVu0WmVS',
-  consumer_secret: 'txDqowdZ3d1wPl8nyR9dmwVQJg22Q93iJOCqoTFDe2r3tdjh5n',
-  access_token_key: '867344151683022848-mMEPkbtrlOjcii4aKkMC4LuPnFvfovb',
-  access_token_secret: 'RU14Dw5FDgP5ii8Dvr1sERKOPFG06xUI4Hjt6FTWP6e2F'
+  consumer_key: process.envCONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token_key: process.env.ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
+
+// var client = new Twitter({
+//   consumer_key: process.env["CONSUMER_KEY"],
+//   consumer_secret: process.env["CONSUMER_SECRET"],
+//   access_token_key: process.env["ACCESS_TOKEN_KEY"],
+//   access_token_secret: process.env["ACCESS_TOKEN_SECRET"]
+// });
+
+// var client = new Twitter({
+//   consumer_key: `${process.env.CONSUMER_KEY}`,
+//   consumer_secret: `${process.env.CONSUMER_SECRET}`,
+//   access_token_key: `${process.env.ACCESS_TOKEN_KEY}`,
+//   access_token_secret: `${process.env.ACCESS_TOKEN_SECRET}`
+// });
 
 var params = {screen_name: 'realDonaldTrump'};
 // //step2?
