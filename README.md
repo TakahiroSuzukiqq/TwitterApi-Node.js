@@ -27,5 +27,7 @@ npm install twitter
        }
      });
      ````  
+  5. To hide your keys use ".env" file with following reference.  
+     https://github.com/motdotla/dotenv  
 
- 
+  
