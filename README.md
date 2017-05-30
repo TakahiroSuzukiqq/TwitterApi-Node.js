@@ -1,7 +1,7 @@
 # Twitter API for CFA-DonaldBoard-Hackathon  
   This is a test API for donaldboard  
   https://github.com/AR8Stefan/CFA-Hackathon-Dashboard  
-    
+
 # Installation  
 ````
 npm install twitter  
@@ -28,5 +28,15 @@ npm install twitter
        }
      });
      ````  
-  5. To hide your keys use ".env" file with following reference.  
+  5. Install epxress with "npm install express --save".  
+  6. Create other file and move code from index.js file.  
+  7. To activate Express, call Express and setup server as http://localhost:3000.  
+  8. Install ejs view engine with "npm install ejs --save".  
+  9. Create view folder and index.ejs file, inside the file, just setup top page of the browser.  
+  10. Install "body-parser" with "npm install body-parser --save" as a one of middleware and setup in index.js file.  
+       reference: https://expressjs.com/en/guide/using-middleware.html , https://www.npmjs.com/package/body-parser   
+  11. Setup post action in index.js file, and also setup exporting user-list.js and store all of function into export module.    
+  12. Inside module export in user-list.js, to get userinput just change screen_name as screen_name  
+  13. Create "list.ejs" inside vievs folder
+  6. To hide your keys use ".env" file with following reference.  
      https://github.com/motdotla/dotenv  

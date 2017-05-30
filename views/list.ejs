@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Follow Back list</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>People that don't follow you back</h1>
+          <ul>
+            <!-- <% users.forEach(user => { %>
+              <li>
+                <a href='<%#= "http://twitter.com/" + user.screen_name %>'>Twitter</a>
+                <img src="<%#= user.avatar %>" />
+                <span><%#= user.name %></span>
+                <span><%#=user.screen_name %></span>
+              </li>
+            <% }) %> -->
+             <% users.forEach(user => { %>
+               <a href='<%= "http://twitter.com/" + user.screen_name %>' /a><br>
+               <img src="<%= user.avatar %>" /><br>
+               <%= user.screen_name %> <br>
+             <% }) %>
+
+          </ul>
+
+  </body>
+</html>
